@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.5)
+(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
     (links 101)
     (no_connects 0)
-    (area 61.222887 121.420887 107.433113 167.631113)
+    (area 57.74143 119.594184 109.279 169.6307)
     (thickness 1.6)
     (drawings 30)
     (tracks 373)
@@ -14,13 +14,13 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user)
+    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.7)
     (user_trace_width 0.7)
     (user_trace_width 1)
     (user_trace_width 1.2)
@@ -66,9 +66,9 @@
     (pad_drill 0)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFF9F)
+    (visible_elements 7FFEFF3F)
     (pcbplotparams
-      (layerselection 0x000f0_80000001)
+      (layerselection 0x00020_00000000)
       (usegerberextensions false)
       (excludeedgelayer false)
       (linewidth 0.100000)
@@ -87,7 +87,7 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk false)
-      (outputformat 1)
+      (outputformat 2)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
@@ -197,13 +197,13 @@
     (add_net "Net-(U1-Pad4)")
   )
 
-  (module Explore:smd_push2_New (layer F.Cu) (tedit 5901851A) (tstamp 59017768)
+  (module Explore:smd_push2_New (layer F.Cu) (tedit 5938D9E9) (tstamp 59017768)
     (at 70.4215 140.9065)
     (descr "SMD Pushbutton 2")
     (path /5901850A)
     (autoplace_cost180 10)
-    (fp_text reference SW1 (at 0 -3.59918) (layer F.SilkS) hide
-      (effects (font (size 1.143 1.27) (thickness 0.1524)))
+    (fp_text reference SW1 (at 0.1651 0.0381) (layer F.SilkS)
+      (effects (font (size 1.143 1) (thickness 0.1524)))
     )
     (fp_text value SW_PUSH (at 0 3.59918) (layer F.SilkS) hide
       (effects (font (size 1.143 1.27) (thickness 0.1524)))
@@ -425,13 +425,13 @@
       (net 11 /DTR))
   )
 
-  (module Capacitors_SMD:C_1206 (layer F.Cu) (tedit 5875E456) (tstamp 58737A2F)
+  (module Capacitors_SMD:C_1206 (layer F.Cu) (tedit 5938D9B9) (tstamp 58737A2F)
     (at 72.263 136.271 90)
     (descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 1206")
     (path /58739AA0)
     (attr smd)
-    (fp_text reference C1 (at 0 -2.3 90) (layer F.SilkS) hide
+    (fp_text reference C1 (at 1.3716 0 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 100uF (at 0 2.3 90) (layer F.Fab) hide
@@ -454,14 +454,14 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5875E463) (tstamp 58737A35)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5938D9AE) (tstamp 58737A35)
     (at 70.104 136.144 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /58739A59)
     (attr smd)
-    (fp_text reference C2 (at 0 -1.9 90) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference C2 (at 0.889 -0.0254 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 100nF (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -483,14 +483,14 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5875E798) (tstamp 58737A3B)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5938DA1C) (tstamp 58737A3B)
     (at 68.58 146.431)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /58739AA4)
     (attr smd)
-    (fp_text reference C3 (at 0 -1.9) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference C3 (at -0.0508 0.0254) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 15pF (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -512,14 +512,14 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5875E482) (tstamp 58737A41)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5938DA77) (tstamp 58737A41)
     (at 71.755 146.939 180)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /58739AA5)
     (attr smd)
-    (fp_text reference C4 (at 0 -1.9 180) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference C4 (at 0.0762 -0.0508 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 15pF (at 0 1.9 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -541,14 +541,14 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5875E50F) (tstamp 58737A47)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5938DC14) (tstamp 58737A47)
     (at 90.932 157.734 90)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /58739A7A)
     (attr smd)
-    (fp_text reference C5 (at 0 -1.9 90) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference C5 (at 0.8636 -0.0254 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 1uF (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -570,14 +570,14 @@
     )
   )
 
-  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5875E529) (tstamp 58737A4D)
+  (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 5938DC78) (tstamp 58737A4D)
     (at 98.5012 154.8384)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /58739A7D)
     (attr smd)
-    (fp_text reference C6 (at 0 -1.9) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference C6 (at 0.9652 0.0508) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 2.2uF (at 0 1.9) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -599,14 +599,14 @@
     )
   )
 
-  (module LEDs:LED-0603 (layer F.Cu) (tedit 5875E4EB) (tstamp 58737A7E)
+  (module LEDs:LED-0603 (layer F.Cu) (tedit 5938DBB4) (tstamp 58737A7E)
     (at 75.8444 156.6672 180)
     (descr "LED 0603 smd package")
     (tags "LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED")
     (path /58739A53)
     (attr smd)
-    (fp_text reference D3 (at 0 -1.5 180) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference D3 (at -1.1938 -0.0508 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value LED (at 0 1.5 180) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -628,14 +628,14 @@
       (net 1 GND))
   )
 
-  (module TO_SOT_Packages_SMD:SOT-23 (layer F.Cu) (tedit 5875E549) (tstamp 58737AF9)
+  (module TO_SOT_Packages_SMD:SOT-23 (layer F.Cu) (tedit 5938DCC3) (tstamp 58737AF9)
     (at 96.012 135.382)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /58739A8D)
     (attr smd)
-    (fp_text reference Q3 (at 0 -2.25) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference Q3 (at -0.0762 -0.0254) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value S8050 (at 0 2.3) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -662,14 +662,14 @@
     )
   )
 
-  (module TO_SOT_Packages_SMD:SOT-23 (layer F.Cu) (tedit 5875E52F) (tstamp 58737B00)
+  (module TO_SOT_Packages_SMD:SOT-23 (layer F.Cu) (tedit 5938DC88) (tstamp 58737B00)
     (at 100.33 147.574 180)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /58739A8E)
     (attr smd)
-    (fp_text reference Q4 (at 0 -2.25 180) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference Q4 (at -0.0762 0.1524 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value S8050 (at 0 2.3 180) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -696,14 +696,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5875E46D) (tstamp 58737B06)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5938DCC9) (tstamp 58737B06)
     (at 94.234 131.826 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /59019E25)
     (attr smd)
-    (fp_text reference R1 (at 0 -1.9 270) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference R1 (at -1.016 0 360) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 10k (at 0 1.9 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -725,14 +725,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5875E4D3) (tstamp 58737B1E)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5938DB7E) (tstamp 58737B1E)
     (at 75.8444 158.4198)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /58739A52)
     (attr smd)
-    (fp_text reference R5 (at 0 -1.9) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference R5 (at 0.0254 0.0508) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 1K (at 0 1.9) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -754,14 +754,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5875E49D) (tstamp 58737B2A)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5938DAC8) (tstamp 58737B2A)
     (at 70.8406 153.8224 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /582994C0)
     (attr smd)
-    (fp_text reference R7 (at 0 -1.9 90) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference R7 (at 0.8636 0.0762 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 150E (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -783,14 +783,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5875E4BA) (tstamp 58737B30)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5938DA60) (tstamp 58737B30)
     (at 68.8594 148.6154 270)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /582994C1)
     (attr smd)
-    (fp_text reference R8 (at 0 -1.9 270) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference R8 (at -0.8636 0 360) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 100E (at 4.826 1.524 270) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -812,14 +812,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5875E4A5) (tstamp 58737B36)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5938DAF8) (tstamp 58737B36)
     (at 72.7202 153.8478 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /582994C2)
     (attr smd)
-    (fp_text reference R9 (at 0 -1.9 90) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference R9 (at 0.9398 0 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 100E (at 0 1.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -841,14 +841,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5875E53B) (tstamp 58737B42)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5938DCFD) (tstamp 58737B42)
     (at 96.012 138.176)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /58739A8F)
     (attr smd)
-    (fp_text reference R11 (at 0 -1.9) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference R11 (at 0.0762 0) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 12K (at 0 1.9) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -870,14 +870,14 @@
     )
   )
 
-  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5875E537) (tstamp 58737B48)
+  (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 5938DC9C) (tstamp 58737B48)
     (at 100.584 142.494 90)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /58739A90)
     (attr smd)
-    (fp_text reference R12 (at 0 -1.9 90) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference R12 (at 1.0922 -0.0254 180) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value 12K (at 0 1.9 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -899,14 +899,14 @@
     )
   )
 
-  (module TO_SOT_Packages_SMD:SOT-23-5 (layer F.Cu) (tedit 5875E516) (tstamp 58737B67)
+  (module TO_SOT_Packages_SMD:SOT-23-5 (layer F.Cu) (tedit 5938DC2D) (tstamp 58737B67)
     (at 93.472 157.734)
     (descr "5-pin SOT23 package")
     (tags SOT-23-5)
     (path /58739A78)
     (attr smd)
-    (fp_text reference U1 (at -0.05 -2.55) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
+    (fp_text reference U1 (at 1.0414 0.0508) (layer F.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value AP2112K (at -0.05 2.35) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -937,11 +937,11 @@
     )
   )
 
-  (module JST_w:s2b-ph-sm4-tb (layer F.Cu) (tedit 5875E4DF) (tstamp 5874E2D0)
+  (module JST_w:s2b-ph-sm4-tb (layer F.Cu) (tedit 5938DBE4) (tstamp 5874E2D0)
     (at 84.328 159.258)
     (descr "JST PH series connector, S2B-PH-SM4-TB")
     (path /5874F679)
-    (fp_text reference P17 (at 0 -2.79908) (layer F.SilkS) hide
+    (fp_text reference P17 (at 0.0762 -0.3048) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
     (fp_text value CONN_01X02 (at 0 8.8011) (layer F.SilkS) hide
@@ -1435,10 +1435,10 @@
       (xy -0.42164 1.1684) (xy -0.33528 0.8763) (xy -0.33528 0.8763)) (layer B.SilkS) (width 0.00254))
   )
 
-  (module Explore:RGB_SMD_4pin_New (layer F.Cu) (tedit 57CEA5DF) (tstamp 59017770)
+  (module Explore:RGB_SMD_4pin_New (layer F.Cu) (tedit 5938DA93) (tstamp 59017770)
     (at 71.501 150.114 270)
     (path /582994FD)
-    (fp_text reference U7 (at 0 3.6 270) (layer F.SilkS) hide
+    (fp_text reference U7 (at 0 -0.0254 360) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value RGB_4pin (at 0 2.6 270) (layer F.SilkS) hide
@@ -1454,10 +1454,10 @@
       (net 15 "Net-(R8-Pad2)"))
   )
 
-  (module Explore:SMD_RTC_Crstl (layer F.Cu) (tedit 590183BA) (tstamp 59017777)
+  (module Explore:SMD_RTC_Crstl (layer F.Cu) (tedit 5938D9FE) (tstamp 59017777)
     (at 71.12 144.145 180)
     (path /58739AA3)
-    (fp_text reference Y1 (at 0.0635 3.429 180) (layer F.SilkS) hide
+    (fp_text reference Y1 (at -0.1016 -0.0508 180) (layer F.SilkS)
       (effects (font (size 1.5 1.5) (thickness 0.15)))
     )
     (fp_text value "32.768KHz RTC Crystal" (at 0 3 180) (layer F.SilkS) hide
